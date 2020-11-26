@@ -4,11 +4,12 @@ namespace wizphys{
 
 	class Particle{
 		public:
-			Vector3d position;
-			Vector3d velocity;
-			Vector3d acceleration;
+			Vector3D position;
+			Vector3D velocity;
+			Vector3D acceleration;
 			real damping;
 			real massinverse;
-
-	}
+			real mass;
+			void integrate(real duration);
+	};
 }

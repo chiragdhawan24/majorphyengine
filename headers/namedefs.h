@@ -2,4 +2,5 @@
 
 namespace wizphys{
 	typedef double real;
+	#define real_pow powf;
 }
