@@ -58,6 +58,11 @@ namespace wizphys{
 			Vector3D vf(x - v.x,y - v.y,z - v.z);
 			return vf;
 		}
+		
+		Vector3D operator*(real scalar){
+			Vector3D vf(x*scalar, y*scalar, z*scalar);
+			return vf;
+		}
 
 		void operator+=(Vector3D &v){
 			x = x + v.x;
@@ -114,6 +119,5 @@ namespace wizphys{
 		void operator%=(Vector3D &v){
 			*this = *(this)%v;
 		}
-
 	};
 }
